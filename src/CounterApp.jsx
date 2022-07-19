@@ -21,11 +21,11 @@ export const CounterApp = ({ value }) => {
   return (
     <>
         <h1>CounterApp</h1>
-        <h2> { counter } </h2>
+        <h2 data-testid="test-counter-ini">{ counter }</h2>
 
         <button onClick={ subHandle }>-1</button>
         <button onClick={ addHandle }>+1</button>
-        <button onClick={ resetHandle }>Reset</button>
+        <button aria-label='btn-reset' onClick={ resetHandle }>Reset</button>
     </>
   )
 }
